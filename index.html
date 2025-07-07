@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotizador de Video</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cotiza tu video</h1>
+
+    <form id="cotizador-form">
+      <label>Duración del video:</label>
+      <select id="duracion">
+        <option value="35000">30 seg a 2 min ($35.000)</option>
+        <option value="75000">2 a 5 min ($75.000)</option>
+        <option value="120000">Larga duración ($120.000)</option>
+      </select>
+
+      <label>Número de cámaras:</label>
+      <select id="camaras">
+        <option value="0">1 cámara (incluida)</option>
+        <option value="15000">2 cámaras (+$15.000)</option>
+      </select>
+
+      <label>Formato:</label>
+      <select id="formato">
+        <option value="0">Vertical</option>
+        <option value="0">Horizontal</option>
+        <option value="10000">Ambos (+$10.000)</option>
+      </select>
+
+      <label>¿Necesitas dron?</label>
+      <select id="dron">
+        <option value="0">No</option>
+        <option value="15000">Sí (+$15.000)</option>
+      </select>
+
+      <label>Tipo de edición:</label>
+      <select id="edicion">
+        <option value="20000">Simple (+$20.000)</option>
+        <option value="45000">Avanzada (+$45.000)</option>
+        <option value="0">Sin edición</option>
+      </select>
+
+      <label>Tiempo de entrega:</label>
+      <select id="entrega">
+        <option value="60000">Express (1-2 días) +$60.000</option>
+        <option value="30000">Prioritario (3-4 días) +$30.000</option>
+        <option value="0">Estándar (5-7 días)</option>
+        <option value="-10000">Flexible (8-12 días) -$10.000</option>
+      </select>
+
+      <div class="resultado">
+        <h2>Tu pedido cuesta: <span id="total">$0</span></h2>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
